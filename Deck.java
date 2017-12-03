@@ -65,7 +65,7 @@ public class Deck {
 		return getCard;
 	}
 	public ArrayList getOpenedCard(){
-		boolean isOpened = false ;
+		boolean isOpened = false;
 		Card getOpenCard;
 		getOpenCard = getOneCard(isOpened);
 		if (isOpened=true){

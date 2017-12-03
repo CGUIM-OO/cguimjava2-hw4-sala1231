@@ -38,25 +38,25 @@ public class Player {
 	
 	public boolean hitMe(){
 		setOneRoundCard(oneRoundCard);
-		int thisRank = 0 ; 
+		int ThisRank = 0 ; 
 		for (int i =0;i<oneRoundCard.size();i++)
 		{
 			Card thisRound = oneRoundCard.get(i);
-			thisRank = thisRound.getRank();
+			ThisRank = thisRound.getRank();
 			
 		}
-		if (thisRank==11||thisRank==12||thisRank==13){
-			thisRank = 10;
+		if (ThisRank==11||ThisRank==12||ThisRank==13){
+			ThisRank = 10;
 		}
-		else if(thisRank==1){
-			thisRank = 1;
+		else if(ThisRank==1){
+			ThisRank = 1;
 		}
 		else{
-			thisRank = thisRank;
+			ThisRank = ThisRank;
 		}
-		thisRank+=thisRank;
+		ThisRank+=ThisRank;
 		
-		if (thisRank<=16 ){
+		if (ThisRank<=16 ){
 			return true;
 		}
 		else{
